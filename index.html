@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Personal Website</title>
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="Project/css/styles.css" />
+      <style>
+      </style>
+    </head>
+    <body>
+      <header>
+        <h1>Welcome!</h1>
+      </header>
+      <div class="container">
+        <section id="sectionNav">
+          <nav id="column1" class="panel">
+            <div id="Clock" class="box">
+              <div id="Time"></div>
+              <div id="Date"></div>
+            </div>
+            <div id="boxAM" class="box navBox" onclick="showContent('Home'); setActive(this)">
+                <img src="Assets/icons/Home.png" class=icon />
+              </div>
+            <div id="boxCV" class="box navBox" onclick="showContent('About Me'); setActive(this)">
+                <img src="Assets/icons/AboutMe.png" class=icon />
+                <h4>About Me</h4>
+              </div>
+            <div id="boxG" class="box navBox" onclick="showContent('Hobbies'); setActive(this)">
+                <img src="Assets/icons/Hobbies.png" class=icon />
+                <h4>Hobbies</h4>
+              </div>
+            <div id="boxPA" class="box navBox" onclick="showContent('Contact Me'); setActive(this)">
+                <img src="Assets/icons/ContactMe.png" class=icon />
+                <h4>Contact</h4>
+              </div>
+          </nav>
+        </section>
+        <section id="sectionMain">
+          <div id="column2" class="panel">
+            <div id="boxD" class="box"></div>
+          </div>
+        </section>
+      </div>
+      <script src="Project/script/contentDisplay.js" defer></script>
+      <script src="Project/script/updateClock.js" defer></script>
+      <script src="Project/script/constdata.js" defer></script>
+    </body>
+  </html>
